@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobe.Ai</title>
+    <!-- Boottrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!--########################### NAVBAR #######################  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Lobe<img src="logo.JPG" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <link rel="stylesheet" href="style.css">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="example.html">Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="tour.html">Tour</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="help.html">Help</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+            
+              <button class="btn btn-outline-success" type="submit">Download</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<style>
+    ul {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .help p{
+          font-size: 18px;
+        }
+        .step-icon {
+            color: green;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .help{
+          justify-content: center;
+          align-items: center;
+        }
+        @media (max-width: 768px){
+          .sidebar{
+            display: none;
+          }
+          .help p{
+            font-size: 18px;
+          }
+        }
+        @media (min-width: 768px){
+          .help{
+            padding-left: 180px;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
+          }
+        }
+        .help{
+          justify-content: center !important;
+        }
+        .sidebar{
+          color: black;
+          font-weight: bold;
+          font-size: 23px;
+        }
+        .sidebar:hover{
+          background-color: aqua;
+        }
+
+</style>
+<h1>Lobe <span class="sp">Help</span></h1>
+<p>Everything you need to know to train great
+  <br> machine learning models with Lobe.</p>
+<div class="help">
+      <div class="sidebar" style="background-color: aqua; ">
+      
+        <ul>
+            <li onclick="showSection('section1')">Welcome</li>
+            <li onclick="showSection('section2')">Label</li>
+            <li onclick="showSection('section3')">Train</li>
+            <li onclick="showSection('section4')">Results</li>
+            <li onclick="showSection('section5')">Play</li>
+            <li onclick="showSection('section6')">Export</li>
+            <li onclick="showSection('section7')">Improving</li>
+           
+        </ul>
+    </div>
+    <div class="content">
+        <!-- Section 1 -->
+        <div id="section1" class="section">
+           
+            <ul>
+                <li onclick="toggleAnswer('q1_1')">What is Lobe?</li>
+                <p id="q1_1" class="answer">Lobe is a free, private desktop application that has everything you need to take your machine learning ideas from prototype to production.
+                  <ul>
+                    <li>
+                        <i class="fas fa-check step-icon"></i>
+                        <span>Label your examples</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check step-icon"></i>
+                        <span>Train a model</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check step-icon"></i>
+                        <span>Evaluate training Results</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check step-icon"></i>
+                        <span>Play with your model</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check step-icon"></i>
+                        <span>Export and use your model in an app</span>
+                    </li>
+                </ul>
+                </p>
+                <li onclick="toggleAnswer('q1_2')">What is Machine learning</li>
+                <p id="q1_2" class="answer">Machine learning is software that learns to perform a task from a collection of examples rather than through a person explicitly defining rules and formulas. This learning software is called a model. Teaching a model through examples is called training.
+
+
+                  Learn more in this beginner crash course.</p>
+                <li onclick="toggleAnswer('q1_3')">What kind of machine learning can I train with Lobe?</li>
+                <p id="q1_3" class="answer">This version of Lobe learns to look at images using image classification - categorizing an image into a single label overall. We are working to expand to more types of problems and data in future versions.</p>
+                <li onclick="toggleAnswer('q1_4')">What is image classification?</li>
+                <p id="q1_4" class="answer">Image classification is categorizing an image into a single label to represent its content. Apps using image classification could:
+                 
+                </p>
+                <li onclick="toggleAnswer('q1_5')">How do I use my model?</li>
+                <p id="q1_5" class="answer">A model is a piece of code. You can export your model into a variety of industry-standard formats to run on Mac and Windows, the web, or mobile and edge devices. You can also export and use your model in Power Platform. See our GitHub for sample projects and other tools for working with Lobe. We are also working on a collection of apps and integrations to help run your model without any code.
+
+
+                  See more in Export</p>
+                <li onclick="toggleAnswer('q1_6')">How much does Lobe cost?</li>
+                <p id="q1_6" class="answer">Lobe is free and runs entirely on your computer.</p>
+                <li onclick="toggleAnswer('q1_7')">Do I need any machine learning experience?</li>
+                <p id="q1_7" class="answer">No machine learning knowledge is necessary. Lobe follows best practices while automatically building and training a model for you.</p>
+                <li onclick="toggleAnswer('q1_8')">Are my images and models private?</li>
+                <p id="q1_8" class="answer">Yes, all of your images and models stay private on your computer. Lobe runs and trains machine learning models entirely on your own device. Your project images and models are never uploaded to the cloud or visible to us.
+
+
+                  If you opt-in to app analytics, learn more about what is collected.</p>
+               
+            </ul>
+        </div>
+
+        <!-- Section 2 -->
+        <div id="section2" class="section">
+          
+            <ul>
+                <li onclick="toggleAnswer('q2_1')">What is Labelling</li>
+                <p id="q2_1" class="answer">Labeling is assigning categories to your images to create examples that teach Lobe. These examples are commonly known as a dataset. From this dataset, Lobe will learn to automatically predict a label for a given image.</p>
+                <li onclick="toggleAnswer('q2_2')">How do I create a dataset?</li>
+                <p id="q2_2" class="answer">mport and label your images in Lobe.
+
+                  Images - import common image files directly from your computer. Lobe supports JPEG, PNG, BMP, and WebP formats.
+                  
+                  Camera - use any connected camera source to capture images directly in Lobe. You can optionally provide a label for these images. Hold down the camera button to capture a burst of images.
+                  
+                  Import an existing dataset.
+                  
+                  Folders - import existing labeled images by using folder names as the labels.
+                  You can create new labels or edit existing ones by using the text box in the bottom corner of each image.
+                  
+                  
+                  Note
+                  
+                  The max image size Lobe can process is 178,956,970 pixels. For a square image, that is about 13,300 x 13,300 pixels. We recommend staying lower-resolution for faster processing because Lobe will resize and crop your image to a 224 x 224 square.</p>
+                <li onclick="toggleAnswer('q2_3')">What types of images should I collect?</li>
+                <p id="q2_3" class="answer">Collect images that you expect to see in the real world.
+
+                  Lobe can only learn the patterns that exist in the images you provide as examples. Collect images from the same source you expect to use with your exported model.
+                  
+                  
+                  Capture as many variations as possible.
+                  
+                  Try to capture all the variations that naturally occur by collecting images in different conditions. Try different backgrounds, lighting, orientations, or zoom. This helps Lobe learn what parts of the image are useful for making predictions and what is noise.
+                  
+                  
+                  Make sure your content is visible in the center square of the image.
+                  
+                  While training your model, Lobe crops the center square of your images.</p>
+                <li onclick="toggleAnswer('q2_4')">What labels should I use?</li>
+                <p id="q2_4" class="answer">Label for each desired prediction.
+
+                  Create a label for each category you want the model to predict.
+                  
+                  
+                  Catch-all label.
+                  
+                  Lobe will always predict one of your supplied labels for each image. If you expect the model to see images that don’t belong to any of your desired labels, create a 'None' label as a catch-all bucket to show unrelated images</p>
+                <li onclick="toggleAnswer('q2_5')">How many images should I have?</li>
+                <p id="q2_5" class="answer">Gather as many different images as you can.
+
+                  A rough guideline is 100-1,000 images per label for smaller problems. To quickly get started with your project, Lobe has a minimum requirement of 5 images per label.
+                  
+                  
+                  Have roughly equal number of images per label.
+                  
+                  Balance the number of images between each label. If imbalanced, Lobe will be biased to predict the labels with more images and ignore the labels with fewer images.</p>
+                <li onclick="toggleAnswer('q2_6')">Can I use videos?</li>
+                <p id="q2_6" class="answer">You cannot use videos directly with Lobe, but it is a great way to collect many images. Turn your video into frames and select the best and highest variety of images for your problem.
+
+
+                  You can use a tool like SnapMotion, VLC, Free Video to JPG Converter, or VirtualDub./p>
+                <li onclick="toggleAnswer('q2_7')">Can I connect external cameras?</li>
+                <p id="q2_7" class="answer">Yes! Lobe will use the default camera connected to your computer as the primary source. To switch cameras, use the source selector in the Label or Use views.
+
+
+                  If you do not see an image from the camera, make sure the selected camera is connected to your computer and functional, and the Lobe app has permissions to use cameras. You can check permissions by going to:
+                  
+                  Mac - System Preferences > Security & Privacy > Privacy > Camera
+                  Windows - Settings > Privacy > App permissions > Camera</p>
+                <li onclick="toggleAnswer('q2_8')">How do I speed up labeling?</li>
+                <p id="q2_8" class="answer">Use shift + click or cmd/ctrl + click to multi-select many images and label them at the same time.
+                  Capture a burst of labeled images from the webcam.
+                  Use folder names as labels to import existing datasets.
+                  Use your arrow keys to move the image selection and label entirely with your keyboard.</p>
+                <li onclick="toggleAnswer('q2_9')"></li>
+                <p id="q2_9" class="answer">How do I import images from a CSV?</p>
+                <li onclick="toggleAnswer('q2_10')">You can’t use CSVs directly with Lobe. However, we built an external desktop app and Python command line tool to both download images and run your exported model on a CSV of image URLs.
+
+
+                  Learn more on our GitHub.</li>
+              
+            </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div id="section3" class="section">
+         
+            <ul>
+                <li onclick="toggleAnswer('q3_1')">What is training?</li>
+                <p id="q3_1" class="answer">Training is how your model learns to predict the correct labels from your examples. You can think of your examples as a collection of flashcards. During training, your model will continually look through the flashcards and try to find similar patterns that help it guess the right answers.
+
+
+                  Read more machine learning basics
+                  
+                  Read more about labeling your examples</p>
+                <li onclick="toggleAnswer('q3_2')">How do I start training?</li>
+                <p id="q3_2" class="answer">Lobe automatically starts training when your examples meet the minimum requirements. To start training, you need:
+
+                  Imported images to label as examples
+                  At least two labels
+                  At least five images per label
+                  Lobe will also follow best practices to continue training when you make changes to your examples. If you make large changes or add/remove labels, Lobe will reset training and start training a new model.
+                  
+                  
+                  After automatic training has completed, you can manually optimize your model to train for longer for better real-world performance (File > Optimize Model).</p>
+                <li onclick="toggleAnswer('q3_3')">How long will training take?</li>
+                <p id="q3_3" class="answer">Training time is quite variable and depends on how hard it is to distinguish between the labels in your examples and how many examples you have. It can take anywhere from minutes to hours, and sometimes days for very large problems.
+
+
+                  You can hover over the training progress to see a time estimate. This training time estimate is updated every few seconds based on your progress and computer’s current processing speed. You may see it fluctuate if you are performing other tasks on your computer as available CPU and memory change.</p>
+                <li onclick="toggleAnswer('q3_4')">How do I train for longer?</li>
+                <p id="q3_4" class="answer">When training has completed, you can optimize your model by selecting File > Optimize Model. Optimizing a model performs additional training and can take much longer to complete, but will generally help find a better version of your model.
+
+
+                  While optimizing, Lobe will keep training for as long as your model is improving and does not have a set end-time.</p>
+                <li onclick="toggleAnswer('q3_5')">Can I change my model architecture?</li>
+                <p id="q3_5" class="answer">Lobe automatically picks the best model architecture for your problem; no setup or configuration needed. Project Settings (File > Project Settings) lets you switch your project between two modes:
+
+                  Accuracy: a larger model that will generally achieve higher accuracy on harder problems, but will have longer prediction times and use more memory.
+                  Speed: a smaller model that will have faster prediction speed and smaller memory usage, but may have lower accuracy. This model can also be optimized for edge devices such as mobile phones or the Raspberry Pi.
+                  Changing your project will reset any training completed so far and automatically train a new model.</p>
+                <li onclick="toggleAnswer('q3_6')">What models are used?</li>
+                <p id="q3_6" class="answer">Lobe uses two popular models for image classification:
+
+                  Accuracy: ResNet-50 V2
+                  Speed: MobileNetV2
+                  Both models utilize transfer learning with pretrained weights from the ImageNet dataset. Transfer learning lets you train better models with less data and gives a better starting point for training on larger data.</p>
+                <li onclick="toggleAnswer('q3_7')"></li>
+                <p id="q3_7" class="answer">Is Lobe performing data augmentation?</p>
+                <li onclick="toggleAnswer('q3_8')">When loading images for training, Lobe will crop to the center square and scale your image. Lobe will automatically create small variations of your images to reflect the noisiness of real-world data. During training, Lobe will make five variations of your images with randomly varied:
+
+                  Brightness
+                  Contrast
+                  Saturation
+                  Hue
+                  Rotation
+                  Zoom
+                  JPEG encoding noise</li>
+                <p id="q3_8" class="answer">Answer to Question 3.8</p>
+                <li onclick="toggleAnswer('q3_9')">Question 3.9</li>
+                <p id="q3_9" class="answer">Answer to Question 3.9</p>
+                <li onclick="toggleAnswer('q3_10')">Question 3.10</li>
+                <p id="q3_10" class="answer">Answer to Question 3.10</p>
+            </ul>
+        </div>
+
+        <!-- Section 4 -->
+        <div id="section4" class="section">
+          
+            <ul>
+                <li onclick="toggleAnswer('q4_1')">What are my training results?</li>
+                <p id="q4_1" class="answer">What are my training results?
+                  Your results show you which images your model is predicting correctly and incorrectly. Correct predictions have green labels and incorrect predictions have red labels. The width of the label bar represents how confident the model was in that prediction.
+                  
+                  
+                  Hovering over a predicted label will show the true label you gave that image. The more correct the predictions, the better the model is performing.
+                  
+                  
+                  You can view and sort your images in different ways to check:
+                  
+                  Whether your model is successfully learning all the labels with View > All Images selected.
+                  Approximately how well it will work on new images with View > Test Images selected. Learn more about test images.
+                  Which images and labels confuse your model by selecting your individual labels in the sidebar.</p>
+                <li onclick="toggleAnswer('q4_2')">How do I see labels that are confused with one another?</li>
+                <p id="q4_2" class="answer">Select your individual labels in the sidebar to see results specific to that label. Lobe will show you which other labels are commonly confused with this one.
+
+
+                  Try to spot what similarities exist between the images that confuse the model and the images in the true label. For example, you may notice the same background color across the confused images and the images in your label. If you notice these patterns, try to collect varying images that look like the confused image to better teach Lobe what patterns to ignore. In this example, collect more images in your selected label with varying background colors.</p>
+                <li onclick="toggleAnswer('q4_3')">How do I see images that confuse the model?</li>
+                <p id="q4_3" class="answer">To see where your model is most confused, look at the most confident incorrect predictions and the least confident correct predictions.
+
+                  Select View > Correct First to view your predictions sorted by most confident to least confident. Try to find any patterns where your model was very confident in its wrong prediction.
+                  Select View > Incorrect First to view your predictions sorted by least confident to most confident. See where your model is least confident with its correct predictions.
+                  Collect more variations of images that have similar patterns to these two cases to help your model improve.</p>
+                <li onclick="toggleAnswer('q4_4')">What are test images?</li>
+                <p id="q4_4" class="answer">Test images are a random subset of your examples that Lobe hides from your model during training. Lobe automatically splits your examples into two parts:
+
+                  Random 80% is used to train your model.
+                  Random 20% is held out and used to test your model.
+                  See the results on only your held out test images by selecting View > Test Images. If your overall performance on All Images is very high and your performance with Test Images is lower, your model may be memorizing your examples instead of learning to generalize to unseen images. This is often called overfitting.
+                  
+                  
+                  To help prevent overfitting, you can:
+                  
+                  Collect more images overall so the training set includes more variations.
+                  Make sure your images don’t look too similar to each other.</p>
+                <li onclick="toggleAnswer('q4_5')">Results look good, what should I do next?</li>
+                <p id="q4_5" class="answer">When you are happy with the results, you should try out the model in the real world! Experiment on new images with Play, or Export the model to use in your app. Try to trick your model with new images that test its limits, and add those images as examples to improve your model.</p>
+                <li onclick="toggleAnswer('q4_6')">How will my model perform in the real world?</li>
+                <p id="q4_6" class="answer">Look at the results on your test images to get a better sense how your model will perform on unseen data. Select View > Test Images to see the random subset of your examples that your model did not use during training.</p>
+                <li onclick="toggleAnswer('q4_7')">Can I fix labeling errors?</li>
+                <p id="q4_7" class="answer">Yes, you can fix labeling errors directly from results. You may find some predictions marked as incorrect because they were incorrectly labeled examples. Fix these labeling mistakes by clicking on the predicted label text box and typing or selecting the true label.</p>
+                
+            </ul>
+        </div>
+
+        <!-- Section 5 -->
+        <div id="section5" class="section">
+      
+            <ul>
+                <li onclick="toggleAnswer('q5_1')">How can I play with my trained model?</li>
+                <p id="q5_1" class="answer">Use images from your computer or use the webcam as a video feed to test your model on new images live. Try to actively trick your model and see patterns where it is getting images incorrect. Help improve you model by giving feedback on its predictions.</p>
+                <li onclick="toggleAnswer('q5_2')">Can I correct an incorrect prediction?</li>
+                <p id="q5_2" class="answer">To give your model feedback, you can edit the prediction text box directly and add the image and label as an example. Alternatively, click the correct or incorrect buttons on the image to add it as an example. Lobe will automatically train with these new examples to continually improve.</p>
+                <li onclick="toggleAnswer('q5_3')">Can I view multiple images at once?</li>
+                <p id="q5_3" class="answer">Currently, you can only view a single image at a time or use your webcam as a video feed.</p>
+                <li onclick="toggleAnswer('q5_4')">My model is not performing well, what can I do?</li>
+                <p id="q5_4" class="answer">Many factors can cause your model to not perform well when playing with new images. Check out Improving for tips on what to look for and how to improve your model.</p>
+                
+            </ul>
+        </div>
+
+        <!-- Section 6 -->
+        <div id="section6" class="section">
+          
+            <ul>
+                <li onclick="toggleAnswer('q6_1')">How do I use my model?</li>
+                <p id="q6_1" class="answer">Your model is a collection of files that other programs can load to run predictions. These files store both the structure of your model and the weights that are a result of training.
+
+
+                  You can directly upload your model to Power Platform to use in Power Apps or Power Automate. You can also use the model files locally in your own app or in most major cloud platforms to create an API. Lobe also hosts your model as a local API to help kickstart your app development.</p>
+                <li onclick="toggleAnswer('q6_2')">Which export option should I choose?</li>
+                <p id="q6_2" class="answer">Lobe provides a few workflows for using models: no-code apps on Microsoft’s Power Platform, calling a local API, adapting starter projects, or working with model files directly.
+
+                  No-code apps with Microsoft’s Power Platform
+                  If you want to quickly build an app or automation flow without needing to write code, export your model to AI Builder in the Power Platform for use in Power Apps or Power Automate flows. You can connect your model in your app or flow to other external services, including many Microsoft integrations, for easily creating complex end-to-end apps for you or your organization.
+                  
+                  Integrate with an external app
+                  If you are using Lobe with another app, check if it can call an API to get predictions over a network or if it can load and run model files directly.
+                  
+                  
+                  Using an API for predictions
+                  
+                  If your desired app can make POST requests, process JSON, and base64 encode images, you can build a network request to get predictions from your model.
+                  
+                  
+                  If the app is running locally on the same machine or network as Lobe, such as Origami Studio, you can use the Lobe Connect local API without additional configuration. Lobe must be running with your project open for the Lobe Connect local API to function.
+                  
+                  
+                  If your desired app is running in a different environment than Lobe, or you wish to have predictions without the Lobe app open, see the 'Create an API for flexibility' section below for hosting your model as an external API.
+                  
+                  
+                  Loading model files directly
+                  
+                  If your desired app can load and run external models, select the appropriate Model File export option for your app.
+                  
+                  
+                  If Lobe doesn’t support that export yet, such as TensorRT or OpenVINO, look for officially supported converters supplied by the desired format. Most of the time a converter will exist from ONNX or TensorFlow model files into the end format. If you are running into difficulties for a particular model, please check out our subreddit community or use File > Report Issue for support.
+                  
+                  
+                  See Where can I use my model? for more information on the model file exports.
+                  
+                  Create an API for flexibility
+                  Creating a REST API is one of the most versatile ways to hook up apps to use your model. You can call your model as a service from other products, deploy to a variety of cloud providers, or even run on your own computer or edge device like a Raspberry Pi.
+                  
+                  
+                  To prototype or experiment with using an API, check out Lobe Connect. To set one up yourself to run in any location, check out REST Server for an example using Python and Flask with deployment instructions to Azure App Service.
+                  
+                  
+                  To create an API using a Node server such as Express, use the TensorFlow.js export option and see the example code in the export package for loading and running the model on an image.
+                  
+                  Use or customize a starter project
+                  If you want to do predictions in the browser, check out the Web Sample starter project that uses TensorFlow.js without needing a backend server. We recommend using the Speed model from File > Project Settings for faster load times and prediction speed at the expense of potentially lower accuracy when running TensorFlow.js in the browser.
+                  
+                  
+                  If you want to run your model in a mobile setting, see iOS App for a sample using CoreML for iPhone or iPad apps. Similarly, see Android App for a sample using TensorFlow Lite to run on an Android device. For mobile apps, we recommend using the Speed model from File > Project Settings for faster load times and prediction speed at the expense of potentially lower accuracy.
+                  
+                  Classifying images on your computer
+                  You can export your model as TensorFlow and use the Image Tools desktop app to run your model on a folder of images or a spreadsheet of image URLs.
+                  
+                  Write an app from scratch
+                  If you have more experience as a developer, you can export model files directly and use their underlying frameworks such as TensorFlow, CoreML, or ONNX.
+                  
+                  
+                  Where applicable, we recommend using our libraries in Python and .NET for working with Lobe exports as they provide useful helper functions for loading and processing data, as well as formatting return values and even working with the local API for quickly prototyping.
+                  
+                  See Where can I use my model? for more information on the model file export options.</p>
+                <li onclick="toggleAnswer('q6_3')">Where can I use my model?</li>
+                <p id="q6_3" class="answer">We are continually expanding the ways you can use your model. Current recommendations:
+
+
+                  No-code apps with Microsoft’s Power Platform
+                  
+                  Export your model to Power Platform for use in no-code app development with Power Apps and Power Automate, and to connect with many other Microsoft or external services. Use the Speed model from File > Project Settings if you need fast inference speed or if want to use solutions with Application Lifecycle Management (ALM).
+                  
+                  
+                  Local Python app or hosted on Azure, Google Cloud, or AWS
+                  
+                  Export your model as TensorFlow. TensorFlow’s SavedModel is a standard format used in Python applications running TensorFlow 1.x or 2.x, and can be deployed in TensorFlow web services to run inference on the cloud as an API. See our Python SDK for an example running the TensorFlow export.
+                  
+                  
+                  Apple iOS
+                  
+                  Export your model as Core ML to develop iOS, iPad, and Mac apps. Use the Speed model from File > Project Settings if you need low latency and a smaller memory footprint on iOS.
+                  
+                  
+                  Android or Raspberry Pi
+                  
+                  Export your model as TensorFlow Lite to be used for mobile and IoT applications. Use the Speed model from File > Project Settings if you need low latency and a smaller memory footprint on the edge.
+                  
+                  
+                  ONNX
+                  
+                  Export your model as ONNX for cross-compatible applications, including edge devices and .NET applications.
+                  
+                  
+                  Web Applications
+                  
+                  Export your model as TensorFlow.js for browser-based JavaScript or server-side Node applications. Use the Speed model from File > Project Settings if you need low latency and a smaller memory footprint in the browser.
+                  
+                  
+                  Lobe Connect
+                  
+                  Lobe will host a local API to call your model via a REST endpoint. Use this option to mock a service that runs predictions while developing your app.
+                  
+                  To run the local API:
+                  
+                  Capture an input image as a base64 string. Make sure the base64 string doesn't include the 'data:image/jpeg;base64,' prefix that sometimes is added.
+                  Do a POST request to the locally hosted API for your project with the details from the export sheet. Here is an example of what to request:
+                  Spreadsheets and local images
+
+                  Export your model as a TensorFlow SavedModel to use with our helper code for running predictions on spreadsheets of image URLs or local image files.</p>
+                <li onclick="toggleAnswer('q6_4')">What is Power Platform?</li>
+                <p id="q6_4" class="answer">Power Platform is Microsoft’s no-code/low-code platform for building applications and automation flows for your business. Use your model trained in Lobe with Power Apps and Power Automate to add intelligence to your business solutions.
+
+
+                  Learn more about Power Platform here.</p>
+                <li onclick="toggleAnswer('q6_5')">How do I export my model to Power Platform?</li>
+                <p id="q6_5" class="answer">You can easily upload your model to AI Builder to use in the Power Platform. Select Power Platform on the Export tab and sign into your work or school Microsoft account. Upload your model and view it in AI Builder within your Power Platform account.
+
+
+                  Learn more about Power Platform here.</p>
+                <li onclick="toggleAnswer('q6_6')">How do I use my model in Power Platform?</li>
+                <p id="q6_6" class="answer">Once you’ve uploaded your model to Power Platform, you can view your model in your environment. Then you can use your model in Power Apps and Power Automate.
+
+
+                  Learn more about Power Platform here.</p>
+                <li onclick="toggleAnswer('q6_7')">Can I see example code?</li>
+                <p id="q6_7" class="answer">When you export a model, the exported folder contains example code to use your model:
+
+                  example/ directory: Lobe provides an example with a readme on how to load and run your model in the chosen export format.
+                  signature.json file: the signature contains information about your model that your app will generally have to provide when loading the model. This includes details about the exposed inputs and outputs, their data types and shapes, and the labels corresponding to predicted confidence outputs. See the example/ directory for code on how to load and use the signature.</p>
+                <li onclick="toggleAnswer('q6_8')">Can I see some starter projects?</li>
+                <p id="q6_8" class="answer">Lobe provides example projects on GitHub to help you get started.
+
+
+                  iOS
+                  
+                  A sample iOS application running the exported Core ML model: https://github.com/lobe/iOS-bootstrap
+                  
+                  
+                  Android
+                  
+                  A sample Android application running the exported TensorFlow Lite model: https://github.com/lobe/android-bootstrap
+                  
+                  
+                  Web
+                  
+                  An example React web application that runs predictions on images from your webcam in the browser: https://github.com/lobe/web-bootstrap
+                  
+                  
+                  An example Flask server that runs your model as an API service: https://github.com/lobe/flask-server
+                  
+                  
+                  .NET
+                  
+                  A .NET library and example command line app to run predictions on images from your computer: https://github.com/lobe/lobe.net
+                  
+                  
+                  Raspberry Pi
+                  
+                  An example Python application that runs predictions on a Raspberry Pi: https://github.com/microsoft/trashclassifier</p>
+                <li onclick="toggleAnswer('q6_9')">What is Lobe Connect?</li>
+                <p id="q6_9" class="answer">Lobe Connect is a local API to call your model via a REST endpoint. We recommend using Lobe Connect to prototype development with a REST service, connect to apps and tools locally, or run your model on devices connected to your same local network.
+
+                  You need to have Lobe running with your project open for Lobe Connect to enable your local API.</p>
+                <li onclick="toggleAnswer('q6_10')">Does Lobe have an SDK?</li>
+                <p id="q6_10" class="answer">Yes! Lobe provides a Python SDK and .NET SDK to run the exported models.</p>
+            </ul>
+        </div>
+
+        <!-- Section 7 -->
+        <div id="section7" class="section">
+         
+            <ul>
+                <li onclick="toggleAnswer('q7_1')">How can I improve my model?</li>
+                <p id="q7_1" class="answer">Your examples are your model’s source of truth about the world. Here are some best practices for building successful projects:
+
+                  Understand your problem - start simple, expand over time. Break your scenario down into smaller experiments to prototype and then expand over time.
+                  Lobe only learns from the examples you import. Try to collect examples that cover the different types of images your model will see and make predictions on in the future.
+                  More images always help - new and unique images are better. The more unique and different the images are, the better your model will learn to generalize.
+                  If you can’t classify the label from looking at an image, it will also be difficult for Lobe. Make the image content as large and relevant to your label as possible.</p>
+                <li onclick="toggleAnswer('q7_2')">Why is Lobe not predicting well on new images in Use?
+                </li>
+                <p id="q7_2" class="answer">Compare the images in Use with the images in your examples:
+
+                  Your model may have memorized your examples instead of learning to generalize to new images. This is commonly called overfitting. Check Results to see if your model is overfitting.
+                  These new images are not represented by your examples. Try to play with edge cases and ‘trick’ Lobe as much as possible. Make sure your examples contain all these new variations and conditions seen from Use. You can add new images as examples directly from Use so that Lobe can continually improve.</p>
+                <li onclick="toggleAnswer('q7_3')">Why is there always a prediction even when nothing is in the image?</li>
+                <p id="q7_3" class="answer">Lobe will always predict one of your labels even if your image does not contain any related content. If you expect your model to see these types of images, create a ‘None’ label and add variations of these images as examples. You can use this ‘None’ label as a placeholder when waiting for relevant predictions.</p>
+                <li onclick="toggleAnswer('q7_4')">Why are small objects not working?
+                </li>
+                <p id="q7_4" class="answer">Why are small objects not working?
+                  The smaller the object is you are trying to classify, the harder it will be for the model to predict. If you can, set up your camera to be closer or zoom in to the object you need to classify. You could alternatively square crop the portion of the image that contains the object you want to classify.</p>
+                <li onclick="toggleAnswer('q7_5')">How do I make my model work with multiple objects in my images?
+                </li>
+                <p id="q7_5" class="answer">How do I make my model work with multiple objects in my images?
+                  Your model may have a harder time learning with many objects in your images. You should:
+                  
+                  Make your subject as large and centered as possible in your images. The larger the surface area of your image with content related to your label, the better your model will perform.
+                  Collect more variations of images with multiple objects so that your model can learn to distinguish the objects unrelated to your label.</p>
+                <li onclick="toggleAnswer('q7_6')">Why is Lobe predicting one of my labels more often than others?</li>
+                <p id="q7_6" class="answer">If you have many more images in one of your labels, Lobe may predict this label more frequently than others. Balance your examples by making sure labels have an equal number of images.</p>
+                <li onclick="toggleAnswer('q7_7')">How can I create a new version or keep track of progress?
+                </li>
+                <p id="q7_7" class="answer">Duplicate your project through Project > Duplicate. This will make a new copy of your examples and any training. Experiment with different images or model types on duplicated projects without worrying about losing your original project.</p>
+                <li onclick="toggleAnswer('q7_8')">Why are tall or wide images not performing well?</li>
+                <p id="q7_8" class="answer">Why are tall or wide images not performing well?</p>
+                <li onclick="toggleAnswer('q7_9')">Try to keep your content center frame. Lobe takes the center square crop of every image for training. Important parts of your image may be cropped out and not seen by your model.</li>
+                <p id="q7_9" class="answer">How can I make sure my model is not biased towards different groups?</p>
+                <li onclick="toggleAnswer('q7_10')">How do I make my model work better under different conditions?
+                </li>
+                <p id="q7_10" class="answer">Collect more images in the different conditions that you expect to see in the real world. Your model may not perform well in situations it hasn’t seen in your examples, such as images at night or in different seasons and weather conditions. If you are unable to collect image variations, try to synthetically make them in an image editing tool like Photoshop.</p>
+            </ul>
+        </div>
+    </div>
+  </div>
+    <script>// script.js
+
+      function showSection(sectionId) {
+          // Hide all sections
+          var sections = document.querySelectorAll('.section');
+          sections.forEach(function(section) {
+              section.classList.remove('active');
+          });
+      
+          // Show the selected section
+          var selectedSection = document.getElementById(sectionId);
+          if (selectedSection) {
+              selectedSection.classList.add('active');
+          }
+      
+          // Hide all answers when a new section is shown
+          var answers = document.querySelectorAll('.answer');
+          answers.forEach(function(answer) {
+              answer.style.display = 'none';
+          });
+      }
+      
+      function toggleAnswer(answerId) {
+          var answer = document.getElementById(answerId);
+          if (answer.style.display === 'none' || answer.style.display === '') {
+              answer.style.display = 'block';
+          } else {
+              answer.style.display = 'none';
+          }
+      }
+      
+      // Initially show the first section
+      document.addEventListener('DOMContentLoaded', function() {
+          showSection('section1');
+      });
+      </script>
+      <div class="last-section">
+        <h1>Train your app with Lobe</h1>
+      
+    
+    </div>
+    <hr>
+    <!-- #### footer ### -->
+    <footer class="footer">
+        <ul class="list">
+            <h3>Lobe <img src="logo.JPG" alt=""></h3>
+            <li>A product by Microsoft.</li>
+            <li>All rights reserved.</li>
+            <li>© Microsoft 2021</li>
+        </ul>
+        <ul class="list">
+            <h3>About</h3>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Examples</a></li>
+        </ul>
+        <ul class="list">
+            <h3>General</h3>
+            <li><a href="#">Notice</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Press Inquiry</a></li>
+            <li><a href="#">Press Images</a></li>
+        </ul>
+        <ul class="list">
+            <h3>Resources</h3>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </footer>
+    </body>
+    </html>
+
+
+    
+     

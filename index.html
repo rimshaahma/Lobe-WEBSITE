@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobe.Ai</title>
+    <!-- Boottrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--########################### NAVBAR #######################  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Lobe <img src="logo.JPG" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <link rel="stylesheet" href="style.css">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="example.html">Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="tour.html">Tour</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="help.html">Help</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+            
+              <button class="btn btn-outline-success" type="submit">Download</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- section-1 -->
+       <!--======= css for changing words============== -->
+       <style>
+        /* General styles for words and videos */
+        .toggle-word {
+            display: none;
+        }
+
+        .toggle-word.active-word {
+            display: inline;
+        }
+
+        .toggle-video {
+            display: none;
+            width: 100%; /* Adjust the size as needed */
+        }
+
+        .toggle-video.active-video {
+            display: block;
+        }
+
+        /* Flexbox styles for the section */
+        .section-1 {
+            display: flex;
+            flex-direction: column; /* Default to column layout */
+        }
+
+        /* Media query for screens larger than 768px */
+        @media (min-width: 768px) {
+            .section-1 {
+                flex-direction: row; /* Change to row layout */
+                justify-content: space-between; /* Space out the items */
+                align-items: center; /* Center align items vertically */
+            }
+
+            .section1-head, .section1-video {
+                flex: 1; /* Make the items take equal space */
+                padding: 10px; /* Add some padding for spacing */
+            }
+
+            .section1-video {
+                max-width: 600px; /* Set a max-width for the video container */
+            }
+        }
+
+        /* Additional styles for the section elements */
+        .section1-head {
+            flex: 1;
+        }
+
+        .section1-video {
+            flex: 1;
+        }
+        video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-moz-media-controls {
+    display: none !important;
+}
+
+video::-ms-media-controls {
+    display: none !important;
+}
+
+video::-o-media-controls {
+    display: none !important;
+}
+
+video {
+    controls: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+    </style>
+</head>
+<body>
+    <section class="1">
+        <div class="section-1">
+            <div class="section1-head">
+                <h1>Train apps to 
+                    <!-- ======changing words====== -->
+                    <span class="toggle-word active-word" style="color: aqua;">identify plants</span>
+                    <span class="toggle-word" style="color: aqua;">see gestures</span>
+                    <span class="toggle-word" style="color: aqua;">counter reps</span>
+                    <span class="toggle-word" style="color: aqua;">feel emotions</span>
+                    <span class="toggle-word" style="color: aqua;">sense colors</span>
+                    <span class="toggle-word" style="color: aqua;">check safety</span>
+                </h1>
+                <p>Lobe helps you train machine learning models with a free, easy to use tool.</p>
+                <div class="section-1-btn">
+                    <!-- ===== css for video button -->
+                     <style>.video-button {
+                        display: flex;
+                        align-items: center;
+                        background-color: #ff0000;
+                        color: white;
+                        border: none;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                    
+                    .video-button i {
+                        margin-right: 10px;
+                        font-size: 20px;
+                    }
+                    
+                    .video-button:hover {
+                        background-color: #cc0000;
+                    }</style>
+                    <div class="btn">
+                        <button class="btn btn-outline-success" type="submit">Download</button>
+                    </div>
+                    <div class="btn">
+                        <button class="video-button" onclick="openVideo()">
+                            <i class="fas fa-play-circle"></i> Watch Video Tour
+                        </button>
+                        <!-- ===== javscript for video button==== -->
+                        <script>function openVideo() {
+                            window.open('https://youtu.be/Mdcw3Sb98DA', '_blank');
+                        }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- Video Section -->
+   
+<div class="section1-video">
+    <!-- Use the same video for all words -->
+    <video class="toggle-video active-video" controls autoplay loop muted>
+        <source src="https://www.lobe.ai/assets/hero/Home.mp4" type="video/mp4">
+    </video>
+</div>
+
+            
+    </section>
+
+    <!--========================= JavaScript for changing words and videos ===================== -->
+    <script>
+        function displayWordAndVideo() {
+    var words = document.getElementsByClassName("toggle-word");
+    var video = document.querySelector(".toggle-video"); // Select the single video element
+    var wordCounter = 0;
+
+    function updateWord() {
+        if (wordCounter >= words.length) wordCounter = 0;
+
+        for (var i = 0; i < words.length; i++) {
+            words[i].classList.remove('active-word');
+        }
+
+        words[wordCounter].classList.add('active-word');
+        wordCounter++;
+    }
+
+    // Initial update to set the first word
+    updateWord();
+    
+    // Set interval for changing words
+    setInterval(updateWord, 1000);
+}
+
+// Wait for the DOM to fully load before running the script
+document.addEventListener('DOMContentLoaded', displayWordAndVideo);
+
+    </script>
+      
+ <section class="blue" >
+<div class="machine-text" >
+    <h1>
+        Machine learning<br>
+made<span style="color: lightblue;"> easy</span> 
+    </h1>
+    <p>Lobe has everything you need to bring your machine learning ideas to life. Just show it examples of what you want it to learn, and it automatically trains a custom machine learning model that can be shipped in your app.</p>
+
+<div class="machine-img">
+    <img src="screenshot.jpg" alt="">
+</div>
+ </div>
+ <!-- ===================== iconcards ============== -->
+  <div class="icon-container" style="background-color: lightgrey;">
+    <div class="icon">
+        <img src="icon1.JPG" alt="icon">
+        <h2>Easy to Use</h2>
+        <p>Designed to be easy enough for anyone to use. No code or experience required.</p>
+    </div>
+
+    <div class="icon">
+        <img src="icon2.JPG" alt="icon">
+        <h2>Free and Private</h2>
+        <p>Train for free on your own computer without uploading your data to the cloud.</p>
+    </div>
+
+    <div class="icon">
+        <img src="icon3.JPG" alt="">
+        <h2>Project Templates</h2>
+        <p>Available for Mac and Windows. Export your model and ship it on any platform you choose.</p>
+    </div>
+  </div>
+  <!-- ======== templates======== -->
+  <div class="icon1-container" style="background-color: lightgray;">
+    <div class="icon1" style="background-color: white;">
+        <img src="temp-1.JPG" alt="icon">
+        <h2>Easy to Use</h2>
+        <p>Lobe will automatically select the right machine learning architecture for your project. Image classification is available now, with more templates coming soon.</p>
+    </div>
+
+    <div class="icon1" style="background-color: white;">
+        <img src="temp-2.JPG" alt="icon">
+        <h2>Free and Private</h2>
+        <p>Train for free on your own computer without uploading your data to the cloud.</p>
+    </div>
+
+    <div class="icon1" style="background-color: white;">
+        <img src="temp-3.JPG" alt="">
+        <h2>Export Anywhere</h2>
+        <p>Available for Mac and Windows. Export your model and ship it on any platform you choose.</p>
+    </div>
+  </div>
+</div>
+</section>
+  <!-- ######## tilted photos############ -->
+   <section class="tilted-img-vid">
+  <div class="tilted-imgs">
+    <h1>
+        Label, Train, <span style="color: aqua;">Use</span>
+    </h1>
+    <p>Lobe simplifies the process of machine learning into three easy steps. Collect and label your images. Train your model and understand your results. Then play, improve, and export your model.</p>
+    <img src="images/Label.jpg" alt="">
+</div>
+<h1>Label your images</h1>
+<p>Collect bursts using your webcam, or drag in a folder of images from your computer. Then quickly label your images to create a machine learning dataset.</p>
+
+<!-- Add video that plays continuously -->
+<video src="https://www.lobe.ai/assets/steps/Label.mp4" autoplay loop muted playsinline>
+    Your browser does not support the video tag.
+</video>
+<h1>Label your images</h1>
+<p>Collect bursts using your webcam, or drag in a folder of images from your computer. Then quickly label your images to create a machine learning dataset.</p>
+<!-- Add video that plays continuously -->
+<video src="https://www.lobe.ai/assets/steps/Train.mp4" autoplay loop muted playsinline>
+    Your browser does not support the video tag.
+</video>
+<h1>Train automatically</h1>
+<p>Automatically train on your own computer without any setup or configuration. Understand the strengths and weaknesses of your model with live visual results.</p>
+<!-- Add video that plays continuously -->
+<video src="https://www.lobe.ai/assets/steps/Play.mp4" autoplay loop muted playsinline>
+    Your browser does not support the video tag.
+</video>
+<div class="use-para">
+<h1><span class="sp">Use</span> your model</h1>
+<p>Use your model with your webcam or images from your computer. Improve your results by giving your model feedback on its predictions, then finally export it to your app.</p>
+</div>
+<section class="blue" style="background-color: lightgray;" ></section>
+<!-- ### export everywhere ##### -->
+ <div class="export" >
+
+    <h1>Export 
+         <!-- ======changing words====== -->
+         <span class="toggle-word active-word" style="color: aqua;">Anywhere</span>
+         <span class="toggle-word" style="color: aqua;">Everywhere</span>
+         <span class="toggle-word" style="color: aqua;">iOs and macOs</span>
+       
+    </h1>
+    <p>When you are done, you can export your model to a variety of industry standard formats and ship it on any platform you choose.</p>
+ </div>
+ 
+</section>
+ <!-- ######  testimonial ####### -->
+ <div class="feedback-container" style="background-color: lightgrey;">
+    <div class="feedback-card f1">
+        <img src="images/avatar1@2x.jpg" alt="Person 1">
+        <p>As soon as I used Lobe I was completely blown away. I don’t have to spend days trying to learn machine learning. Simply label some images and boom, it really just works.</p>
+        <div class="name">John Doe</div>
+        <div class="occupation">Web Developer</div>
+    </div>
+    <div class="feedback-card f2">
+        <img src="images/avatar2@2x.jpg" alt="Person 2">
+        <p>We’ve been using Lobe to quickly process previously untapped sources of data so that we can improve our models of nature-dependent tourism to promote better decision-making in our oceans.</p>
+        <div class="name">Jane Smith</div>
+        <div class="occupation">Graphic Designer</div>
+    </div>
+    <div class="feedback-card f3">
+        <img src="images/avatar3@2x.jpg" alt="Person 3">
+        <p>Lobe is so easy and takes so much of the complicated stuff out of machine learning. Even my kid was begging me to sit in front of the computer and categorize my bees for me.</p>
+        <div class="name">Emily Johnson</div>
+        <div class="occupation">Project Manager</div>
+    </div>
+</div>
+
+<h1>Lobe Examples</h1>
+<p>One tool, endless possibilities. Discover all the things you can train your app to do with Lobe.</p>
+
+<!-- ##### marqee ############# -->
+<div class="marquee">
+    <div class="marquee-content">
+        <video src="https://www.lobe.ai/assets/examples/Laughing.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Painting%20with%20Mike.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Mask%20Up.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Whales.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Bees.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Sleeping.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Checkout.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Wildfire.mp4" muted loop></video>
+    </div>
+
+</div>
+
+<div class="video-marquee">
+    <div class="video-marquee-content">
+        <video src="https://www.lobe.ai/assets/examples/Microscope.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Wildfire.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Compression.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/African%20Wildlife.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Deforestation.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Telescope.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Checkout.mp4" muted loop></video>
+        <video src="https://www.lobe.ai/assets/examples/Painting%20with%20Mike.mp4" muted loop></video>
+    </div>
+</div>
+<script>document.addEventListener("DOMContentLoaded", () => {
+    const videos = document.querySelectorAll(".marquee-content video");
+    videos.forEach(video => video.play());
+});
+</script>
+<script>
+   document.addEventListener("DOMContentLoaded", () => {
+    const videos = document.querySelectorAll(".video-marquee-content video");
+    videos.forEach(video => video.play());
+});
+
+
+</script>
+<div class="last-section">
+    <h1>Train your app with Lobe</h1>
+    
+
+</div>
+<!-- #### footer ### -->
+<footer class="footer">
+    <ul class="list">
+        <h3>Lobe <img src="logo.JPG" alt=""></h3>
+        <li>A product by Microsoft.</li>
+        <li>All rights reserved.</li>
+        <li>© Microsoft 2021</li>
+    </ul>
+    <ul class="list">
+        <h3>About</h3>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Examples</a></li>
+    </ul>
+    <ul class="list">
+        <h3>General</h3>
+        <li><a href="#">Notice</a></li>
+        <li><a href="#">License</a></li>
+        <li><a href="#">Press Inquiry</a></li>
+        <li><a href="#">Press Images</a></li>
+    </ul>
+    <ul class="list">
+        <h3>Resources</h3>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Tour</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+    </ul>
+</footer>
+</body>
+</html>

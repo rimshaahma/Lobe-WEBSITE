@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobe.Ai</title>
+    <!-- Boottrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<style>
+    /* Hide video controls for all video elements */
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-moz-media-controls {
+    display: none !important;
+}
+
+video::-ms-media-controls {
+    display: none !important;
+}
+
+video::-o-media-controls {
+    display: none !important;
+}
+
+video {
+    controls: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+   
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+</style>
+<body>
+    <!--########################### NAVBAR #######################  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Lobe <img src="logo.JPG" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <link rel="stylesheet" href="style.css">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="example.html">Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="tour.html">Tour</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="help.html">Help</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+            
+              <button class="btn btn-outline-success" type="submit">Download</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="example-container">
+        <!-- Row 1 -->
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Plants.mp4" controls class="example-video"  autoplay loop muted></video>
+            <h2 class="example-heading">Plant Species</h2>
+            <p class="example-para">Train your app to distinguish between different species of plants to help people identify poisonous vegetation.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Hand%20Count.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Hand Gestures</h2>
+            <p class="example-para">Train your app to understand the movement of your hand to create new kinds of immersive user experiences.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Feel%20the%20Burn.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Personal Trainer</h2>
+            <p class="example-para">Train your app to recognize different workout positions to create an automated personal trainer that counts your reps.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Laughing.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Emotional Reactions</h2>
+            <p class="example-para">Train your app to react to different expressions allowing people to send emoji reactions using just their face.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Painting%20with%20Mike.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Interactive Painting</h2>
+            <p class="example-para">Train your app to respond with sounds and stories while kids draw to create engaging learning experiences.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Mask%20Up.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Safety Precautions</h2>
+            <p class="example-para">Train your app to monitor when masks are being correctly worn to help encourage proper safety precautions.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Whales.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Whale Watching</h2>
+            <p class="example-para">Train your app to detect marine life in tourist photos to help conservationists map and protect the ocean.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Bees.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Beehive Health</h2>
+            <p class="example-para">Train your app to monitor the entrance of hives to help beekeepers track and analyze the health of their colonies.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Sleeping.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Baby Monitor</h2>
+            <p class="example-para">Train your app to detect when babies are sleeping or awake to notify parents before they start crying.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Checkout.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Smart Checkout</h2>
+            <p class="example-para">Train your app to recognize different types of produce to help checkout faster without the need to remember price look-up codes.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Wildfire.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Fire Watch</h2>
+            <p class="example-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quis ea obcaecati rem qui repudiandae nihil repellendus ipsam pariatur quas!</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Microscope.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Scientific Research</h2>
+            <p class="example-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur sequi neque consequatur iusto, voluptatibus fugiat dolorem excepturi libero officiis?</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+
+        <!-- Row 7 -->
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/African%20Wildlife.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Wildlife Behavior</h2>
+            <p class="example-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur ea officiis a eveniet dicta nam et repellendus nisi consequatur?</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Compression.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Equipment Analytics</h2>
+            <p class="example-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore deserunt quod hic sunt quos. Ducimus soluta quibusdam laboriosam perspiciatis dolore.</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+
+        <!-- Row 8 -->
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Telescope.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Telescopic Imagery</h2>
+            <p class="example-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur non accusantium eius repellat aperiam rem quod sint nihil quis fugit?</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+        <div class="example">
+            <video src="https://www.lobe.ai/assets/examples/Deforestation.mp4" controls class="example-video" autoplay loop muted></video>
+            <h2 class="example-heading">Aerial Imagery</h2>
+            <p class="example-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sint quaerat exercitationem, ex veniam fugiat? Soluta asperiores aut quasi enim!</p>
+            <p class="example-date">Release Date: August 6, 2024</p>
+        </div>
+    </div>
+    <div class="last-section">
+        <h1>Train your app with Lobe</h1>
+      
+    
+    </div>
+    <!-- #### footer ### -->
+    <footer class="footer">
+        <ul class="list">
+            <h3>Lobe <img src="logo.JPG" alt=""></h3>
+            <li>A product by Microsoft.</li>
+            <li>All rights reserved.</li>
+            <li>© Microsoft 2021</li>
+        </ul>
+        <ul class="list">
+            <h3>About</h3>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Examples</a></li>
+        </ul>
+        <ul class="list">
+            <h3>General</h3>
+            <li><a href="#">Notice</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Press Inquiry</a></li>
+            <li><a href="#">Press Images</a></li>
+        </ul>
+        <ul class="list">
+            <h3>Resources</h3>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </footer>
+    </body>
+    </html>

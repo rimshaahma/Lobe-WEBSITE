@@ -1,0 +1,665 @@
+*body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box !important;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 58px;
+    font-weight: bold;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+}
+p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+.sp{
+    color: aqua;
+}
+.button{
+    background-color: aqua;
+    border-radius: 10px;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.icon-container{
+    justify-content: left;
+}
+.icon-container h2{
+    font-size: bold;
+    justify-content: center !important;
+}
+.icon1-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+.icon1-container img{
+    width: 200px;
+    height: 150px;
+    flex: 1;
+   
+}
+.icon1{
+    width: 100%/3;
+    flex: 1;
+    border: 1px white;
+    padding: 10px;
+height: 500px;
+border-radius: 30px;
+}
+.icon1 h2{
+    justify-content: center;
+}
+.tilted-img-vid p{
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 350px;
+    justify-content: center;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+.section1-head h1{
+    font-size: 58px;
+    font-weight: bold;
+}
+.section1-head p{
+    font-size: 35px;
+}
+.section-1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.machine-img{
+    width: 100%;
+}
+/* <!-- ===================== iconcards ============== --> */
+.icon-container{
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+}
+.icon img{
+    width: 80px;
+    height: 70px;
+    border-radius: 30px;
+}
+.icon p{
+    font-size: 25px;
+}
+.use-para{
+    padding-right: 100px;
+    padding-right: 30px;
+    padding-top: 0;
+   
+}
+/* bubble-icons */
+/* testimonial */
+.feedback-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.feedback-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 400px;
+    font-size: 18px;
+    background-color: white;
+}
+.f1{
+    padding-top: 15px;
+    margin-bottom: 80px;
+}
+.feedback-card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.occupation {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #666;
+}
+/* ######### marqee ########### */
+.marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-content video {
+    width: 500px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+    height: 500px;
+}
+
+.marquee-content video:hover {
+    transform: scale(1.5);
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/* second marqee */
+.video-marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.video-marquee-content {
+    display: inline-block;
+    padding-right: 100%;
+    animation: video-marquee 30s linear infinite;
+}
+
+.video-marquee-content video {
+    width: 500px;
+    height: 500px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.video-marquee-content video:hover {
+    transform: scale(1.5);
+}
+
+@keyframes video-marquee {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+.button1{
+    justify-content: center !important;
+    text-align: center !important;
+    
+}
+
+/* #### FOOTER  ##### */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f1f1f1;
+    justify-content: center !important;
+    gap: 65px;
+}
+.footer .list {
+    list-style-type: none;
+    padding: 0;
+}
+.footer .list h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+.footer .list li {
+    margin: 0 0 5px;
+    color: #555;
+}
+.footer .list a {
+    text-decoration: none;
+    color: #007bff;
+}
+.footer .list a:hover {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 767px){
+   
+    .machine-img{
+width: 50% !important;
+padding: 0%;
+margin: 0%;
+    }
+}
+/* General styles for words and videos */
+.toggle-word {
+    display: none;
+}
+
+.toggle-word.active-word {
+    display: inline;
+}
+
+.toggle-video {
+    display: none;
+    width: 100%;
+}
+
+.toggle-video.active-video {
+    display: block;
+}
+
+/* Flexbox styles for the section */
+.section-1 {
+    display: flex;
+    flex-direction: column; /* Default to column layout */
+}
+.machine-img img {
+    width: 100% !important;
+    height: auto !important;
+}
+video {
+    width: 100%  !;
+    height: auto;
+}
+
+/* Media query for screens larger than 768px */
+@media (min-width: 768px) {
+    .section-1 {
+        flex-direction: row; /* Change to row layout */
+        justify-content: space-between; /* Space out the items */
+        align-items: center; /* Center align items vertically */
+    }
+
+    .section1-head, .section1-video {
+        flex: 1; /* Make the items take equal space */
+        padding: 10px; /* Add some padding for spacing */
+    }
+
+    .section1-video {
+        max-width: 600px; /* Set a max-width for the video container */
+    }
+}
+
+/* Styles for screens smaller than 768px */
+
+p{
+    padding: 0% !important;
+    margin: 0% !important;
+}
+@media (max-width: 768px) {
+    body{
+        box-sizing: border-box;
+        padding: 0%;
+        margin: 0%;
+
+    }
+    p{
+        font-size: 16px;
+    }
+    h1,h2{
+        font-size: 18px;
+    }
+    .span{
+        font-size: 20px;
+    }
+    .icon img{
+        justify-content: center !important;
+        align-items: center;
+        text-align: center;
+    }
+    .icon{
+        justify-content: center !important;
+    }
+    .section-1 {
+        flex-direction: column;
+    }
+
+    .section1-video video,
+    .machine-img img,
+    .tilted-imgs img,
+    
+    .icon1-container .icon1 img,
+    
+    .marquee video,
+    .video-marquee video {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+.icon-container img{
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box;
+}
+    .icon-container,
+    .icon1-container,
+    .feedback-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon, .icon1, .feedback-card {
+        width: 100%; /* Make each card take full width */
+        box-sizing: border-box; /* Include padding/border in element's width and height */
+    }
+
+    .icon img,
+    .icon1 img,
+    .feedback-card img {
+        max-width: 100%; /* Ensure images don't exceed container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .tilted-imgs img {
+        max-width: 100%; /* Ensure images don't exceed container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .tilted-imgs video {
+        width: 100%; /* Ensure videos fit within the screen */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+    
+@media (max-width: 768px) {
+    .tilted-img-vid {
+        width: 100vw !important;  /* Full width of the viewport */
+        height: 100vh !important; /* Full height of the viewport */
+        overflow: hidden;  /* Prevent overflow */
+    }
+
+    .tilted-imgs img,
+    .tilted-imgs video {
+        width: 100vw !important;  /* Full width of the viewport */
+        height: 100vh !important; /* Full height of the viewport */
+        object-fit: cover !important; /* Make sure the image/video covers the area */
+    }
+}
+
+@media (min-width: 768px){
+    .tilted-img-vid {
+        
+        overflow: hidden;  /* Prevent overflow */
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .tilted-imgs img,
+    .tilted-imgs video {
+     margin: 0%;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+        object-fit: cover !important; /* Make sure the image/video covers the area */
+    }
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+example page $$$$$$$$$$$$
+ */
+ .example-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+    justify-content: center; /* Center align cards in the container */
+    gap: 30px; /* Space between cards */
+    padding: 20px;
+}
+
+.example {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 48px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Ensure the card does not exceed its container width */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    flex: 1 1 calc(50% - 40px); /* Two cards per row, accounting for the gap */
+    box-sizing: border-box;
+}
+
+.example:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+.example-video {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.example-heading {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+.example-para {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.example-date {
+    font-size: 0.9em;
+    color: #888;
+}
+@media only screen and (max-width: 768px){
+    .example-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box !important;
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+    }
+    .example{
+        width: 300px;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+} 
+/* ###### tour page ############ */
+/* ====== video ====== */
+.video-container {
+    width: 75%;
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.video-container  img{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+.video-thumbnail {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.video-thumbnail:hover {
+    transform: scale(1.1);
+}
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: white;
+    pointer-events: none;
+}
+.hidden-video {
+    display: none;
+}
+
+
+
+/* #################$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$ ######################################
+######################  blog -page###############*/
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.blogs {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.blogs:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+}
+
+.blogs-img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.blogs-heading {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+.blogs-para {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.blogs-date {
+    font-size: 0.9em;
+    color: #888;
+}
+@media only screen and (max-width: 768px){
+    .blog-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box !important;
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+        box-sizing: border-box !important;
+        overflow-x: hidden;
+    }
+    .blogs{
+        width: 300px;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+} 
+/* ==================================================================================================
+################################################################################################################
+##################################### HELP PAGE ############################################# */
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: #575757;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.answer {
+    display: none;
+    margin-left: 20px;
+}
+.help{
+    display: flex;
+}
+/* Media query for screens wider than 768px */
+@media only screen and (min-width: 768px) {
+    .list {
+      flex: 1 1 22%; /* Four lists in one row */
+    }
+  }
+  
+  /* Media query for screens narrower than 768px */
+  @media only screen and (max-width: 767px) {
+    .list {
+     display: flex;
+     flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center !important;
+        font-size: 18px;
+    }
+  }
